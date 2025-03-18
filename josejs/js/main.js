@@ -109,21 +109,21 @@
 // hacer un programa que guarde en un arreglo los datos digitados por el usuario . el programa debe preguntar si desea agregar otro elemento al final listar todos los datos ingresados por el usuario
 
 
-// Programa 1: Días de la semana con switch
-function obtenerDiaSwitch(numero) {
-    switch (numero) {
-        case 1: return "Lunes";
-        case 2: return "Martes";
-        case 3: return "Miércoles";
-        case 4: return "Jueves";
-        case 5: return "Viernes";
-        case 6: return "Sábado";
-        case 7: return "Domingo";
-        default: return "Número inválido. Debe estar entre 1 y 7.";
-    }
-}
+// // Programa 1: Días de la semana con switch
+// function obtenerDiaSwitch(numero) {
+//     switch (numero) {
+//         case 1: return "Lunes";
+//         case 2: return "Martes";
+//         case 3: return "Miércoles";
+//         case 4: return "Jueves";
+//         case 5: return "Viernes";
+//         case 6: return "Sábado";
+//         case 7: return "Domingo";
+//         default: return "Número inválido. Debe estar entre 1 y 7.";
+//     }
+// }
 
-// Programa 1: Días de la semana con if
+// // Programa 1: Días de la semana con if
 // function obtenerDiaIf(numero) {
 //     if (numero === 1) return "Lunes";
 //     else if (numero === 2) return "Martes";
@@ -135,7 +135,7 @@ function obtenerDiaSwitch(numero) {
 //     else return "Número inválido. Debe estar entre 1 y 7.";
 // }
 
-// Programa 2: Almacenar datos en un arreglo
+// // Programa 2: Almacenar datos en un arreglo
 // function almacenarDatos() {
 //     let datos = [];
 //     let continuar = true;
@@ -196,3 +196,100 @@ function obtenerDiaSwitch(numero) {
 // console.log("Promedio usando for:", promedioFor(arr));
 // console.log("Promedio usando for...in:", promedioForIn(arr));
 // console.log("Promedio usando for...of:", promedioForOf(arr));
+//  peso = parseFloat(prompt("digite su peso"));
+//  altura = parseFloat(prompt("digite su altura"))
+//  elevado = altura^2
+//  x = peso / elevado
+// alert(`su bmi es ${x}`)
+
+
+
+
+
+
+// const frutas =["manzana","banana","uva","fresa"];
+
+// frutas.forEach(function(fruta){
+//     alert(fruta);
+// });
+
+const numeros =[1,2,3,4,5,6];
+
+let total= 0;
+
+numeros.forEach(function(valor){
+    total += valor;
+})
+
+alert(total/numeros.length);
+
+
+// const n = numeros.filter(function(libro){
+//     return numeros>5;
+// }) ;
+
+// alert(n);
+
+const arr = ["juan" , "bogota","pepe","carlos","pepe"];
+let indx = arr.indexOf("pepe")
+console.log(indx)
+indx = arr.indexOf("pepe",indx+1)
+
+console.log(indx)
+
+const palabra = ["casa","perro","sola","arbol"];
+
+const todassonmaslargasquetres = palabra.every(function(palabra){
+    return palabra.length > 3;
+});
+console.log(todassonmaslargasquetres);
+
+
+// const a = [
+//     {deposito:"deposito",monto:200},
+//     {deposito:"retiro",monto:100},
+//     {deposito:"deposito",monto:20},
+//     {deposito:"retiro",monto:30}
+// ]
+
+// const result = a.reduce(function(saldo,mov){
+//     saldo += (mov.tipo === "deposito") ? mov.monto : mov.monto * -1;
+//     return saldo
+// },0);
+
+// alert(result)
+
+// const a = [
+//     {deposito:"deposito",monto:200},
+//     {deposito:"retiro",monto:100},
+//     {deposito:"deposito",monto:20},
+//     {deposito:"retiro",monto:30}
+// ]
+
+// const result = a.reduce(function(saldo,mov){
+//     saldo += (mov.tipo === "deposito") ? mov.monto : mov.monto * -1;
+//     return saldo
+// },0);
+
+// alert(result)
+
+// const a = [200,100,20,3,80,56,101];
+
+// for (let i = 0; i< a.length;i++){
+//     if (i==3) {continue;}
+//     alert(a[i])
+// }
+
+// alert(result)
+
+const a = [200,100,20,3,80,56,101];
+
+for (let i = 0; i< a.length;i++){
+    if (i==3) {break;}
+    alert(a[i])
+}
+
+alert(result)
+
+
+
